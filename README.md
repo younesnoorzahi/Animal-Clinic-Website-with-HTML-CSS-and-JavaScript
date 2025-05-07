@@ -7,6 +7,8 @@ animal-web/
 │   index.html
 │   services.html
 │   appointment.html
+│   images/
+      cover.jpeg
 │   css/
       styles.css
       animations.css
