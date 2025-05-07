@@ -1,0 +1,154 @@
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Intro Animation */
+.intro-animation {
+    animation: fadeOut 0.5s ease 2.5s forwards;
+}
+
+.logo-container i {
+    animation: scaleIn 0.5s ease forwards, bounce 2s ease 0.5s;
+}
+
+.clinic-name {
+    opacity: 0;
+    animation: slideInUp 0.5s ease 0.3s forwards;
+}
+
+.clinic-tagline {
+    opacity: 0;
+    animation: slideInUp 0.5s ease 0.6s forwards;
+}
+
+/* Scroll Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.fade-up {
+    transform: translateY(30px);
+}
+
+.animate-on-scroll.fade-left {
+    transform: translateX(-30px);
+}
+
+.animate-on-scroll.fade-right {
+    transform: translateX(30px);
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* Hover Animations */
+.service-card:hover .service-icon {
+    animation: bounce 1s ease;
+}
+
+.btn.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+/* Header Animation */
+.header.scrolled {
+    box-shadow: 0 5px 15px var(--shadow-color);
+    height: 70px;
+}
+
+/* Mobile Menu Animation */
+.mobile-menu-btn.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
