@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Claws Animal Clinic</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Intro Animation -->
+    <div class="intro-animation" id="introAnimation">
+        <div class="intro-content">
+            <div class="logo-container">
+                <i class="fas fa-paw"></i>
+            </div>
+            <h1 class="clinic-name">Paws & Claws</h1>
+            <p class="clinic-tagline">Animal Clinic</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-paw"></i>
+                    <span>Paws & Claws</span>
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="appointment.html">Appointments</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="appointment.html">Appointments</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-on-scroll fade-up">Compassionate Care for Your Pets</h1>
+                <p class="animate-on-scroll fade-up">Providing exceptional veterinary services with love and dedication since 2005.</p>
+                <a href="appointment.html" class="btn primary-btn animate-on-scroll fade-up">Book an Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="animate-on-scroll fade-up">Welcome to Paws & Claws Animal Clinic</h2>
+                <p class="animate-on-scroll fade-up">Providing compassionate care for your beloved pets since 2005. Our team of experienced veterinarians and staff are dedicated to keeping your pets healthy and happy.</p>
+            </div>
+            <div class="welcome-cards">
+                <div class="card animate-on-scroll fade-up">
+                    <div class="card-content">
+                        <h3>Expert Veterinary Care</h3>
+                        <p>Our team of experienced veterinarians provides comprehensive care for all types of pets, from routine check-ups to specialized treatments.</p>
+                        <a href="services.html" class="btn text-btn">Our Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll fade-up" data-delay="200">
+                    <div class="card-content">
+                        <h3>Easy Appointment Booking</h3>
+                        <p>Schedule appointments online with our easy-to-use booking system. Choose the time that works best for you and your pet.</p>
+                        <a href="appointment.html" class="btn text-btn">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="animate-on-scroll fade-up">Our Services</h2>
+                <p class="animate-on-scroll fade-up">We offer a comprehensive range of veterinary services to keep your pets healthy and happy.</p>
+            </div>
+            <div class="service-cards" id="serviceCards">
+                <!-- Service cards will be added by JavaScript -->
+            </div>
+            <div class="text-center animate-on-scroll fade-up">
+                <a href="services.html" class="btn outline-btn">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="animate-on-scroll fade-up">What Our Clients Say</h2>
+            </div>
+            <div class="testimonial-slider" id="testimonialSlider">
+                <div class="testimonial-slides">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>The team at Paws & Claws has been taking care of my dogs for years. They're always compassionate, thorough, and make my pets feel comfortable.</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">SJ</div>
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <p>Owner of Max & Bella</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>I was so worried when my cat needed emergency surgery, but Dr. Chen and the staff were amazing. They explained everything clearly and took excellent care of my furry friend.</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">MR</div>
+                                <div class="author-info">
+                                    <h4>Michael Rodriguez</h4>
+                                    <p>Owner of Whiskers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>The preventative care program has kept my senior dog healthy and active. I appreciate how they tailor their approach to his specific needs as he ages.</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">ET</div>
+                                <div class="author-info">
+                                    <h4>Emily Thompson</h4>
+                                    <p>Owner of Buddy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Preview Section -->
+    <section class="appointment-preview section bg-light">
+        <div class="container">
+            <div class="appointment-grid">
+                <div class="appointment-info animate-on-scroll fade-right">
+                    <h2>Schedule an Appointment</h2>
+                    <p>Book an appointment for your pet using our interactive calendar. Choose a date and time that works best for you, and our team will confirm your appointment.</p>
+                    <a href="appointment.html" class="btn primary-btn">Book Appointment</a>
+                </div>
+                <div class="appointment-calendar animate-on-scroll fade-left">
+                    <div class="calendar-preview" id="calendarPreview">
+                        <div class="calendar-header">
+                            <h3>Select a Date</h3>
+                        </div>
+                        <div class="calendar-body" id="calendarBody">
+                            <!-- Calendar will be generated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-paw"></i>
+                        <span>Paws & Claws</span>
+                    </div>
+                    <p>Providing compassionate veterinary care for your beloved pets since 2005.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#wellness">Wellness Exams</a></li>
+                        <li><a href="services.html#vaccinations">Vaccinations</a></li>
+                        <li><a href="services.html#surgery">Surgery</a></li>
+                        <li><a href="services.html#dental">Dental Care</a></li>
+                        <li><a href="services.html#emergency">Emergency Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <address>
+                        <p>123 Pet Care Lane</p>
+                        <p>Animalville, CA 90210</p>
+                        <p>Phone: (555) 123-4567</p>
+                        <p>Email: info@pawsandclaws.com</p>
+                        <p>
+                            Monday - Friday: 8am - 6pm<br>
+                            Saturday: 9am - 4pm<br>
+                            Sunday: Closed
+                        </p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Paws & Claws Animal Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/calendar.js"></script>
+</body>
+</html>
