@@ -280,7 +280,7 @@ p {
 /* Hero Section */
 .hero {
     height: 600px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://hawkridgeanimalhospital.com/wp-content/uploads/2021/06/LCtrAuhM6Qi0kN4Ib_fVOAQHcyr4aasKMg-scaled.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/cover.jpeg');
     background-size: cover;
     background-position: center;
     display: flex;
